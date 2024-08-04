@@ -24,9 +24,9 @@ INSERT INTO categories (game_id, category_name) VALUES
 
 -- Insert data into the options table
 INSERT INTO options (category_id, option_name) VALUES
-(1, 'Ana'),
-(1, 'Baptiste'),
-(1, 'Mauga'),
-(2, 'Watchpoint: Gibraltar'),
-(2, 'Numbani'),
-(2, 'New Queen Street');
+(3, 'Ana'),
+(3, 'Baptiste'),
+(3, 'Mauga'),
+(4, 'Watchpoint: Gibraltar'),
+(4, 'Numbani'),
+(4, 'New Queen Street');

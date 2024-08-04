@@ -1,8 +1,10 @@
 package com.keyin.Sprint_Backend.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "options")
 public class Option {
 
     @Id
@@ -13,6 +15,7 @@ public class Option {
 
     @ManyToOne
     @JoinColumn(name = "category_id")
+    @JsonIgnore
     private Category category;
 
     public Option() {

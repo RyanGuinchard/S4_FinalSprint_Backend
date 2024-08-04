@@ -1,10 +1,11 @@
 package com.keyin.Sprint_Backend.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
-
 import java.util.List;
 
 @Entity
+@Table(name = "categories")
 public class Category {
 
     @Id
@@ -15,6 +16,7 @@ public class Category {
 
     @ManyToOne
     @JoinColumn(name = "game_id")
+    @JsonBackReference
     private Game game;
 
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
