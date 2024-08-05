@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/categories/{categoryId}/options")
+@CrossOrigin(origins = "*")
 public class OptionController {
 
     @Autowired
