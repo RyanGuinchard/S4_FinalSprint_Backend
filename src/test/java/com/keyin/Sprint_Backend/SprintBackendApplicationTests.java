@@ -27,7 +27,7 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 class SprintBackendApplicationTests {
 
-	    @Mock
+	@Mock
     private CategoryRepository categoryRepository;
 
     @Mock
@@ -50,7 +50,7 @@ class SprintBackendApplicationTests {
         MockitoAnnotations.openMocks(this);
     }
 
-    // CategoryService tests
+    // CategoryService tests:
     @Test
     void testGetCategoriesByGameId() {
         Long gameId = 1L;
@@ -81,7 +81,7 @@ class SprintBackendApplicationTests {
         verify(categoryRepository, times(1)).deleteById(categoryId);
     }
 
-    // GameService tests
+    // GameService tests:
     @Test
     void testGetAllGames() {
         List<Game> games = Arrays.asList(new Game(), new Game());
@@ -122,7 +122,7 @@ class SprintBackendApplicationTests {
         verify(gameRepository, times(1)).deleteById(gameId);
     }
 
-    // OptionService tests
+    // OptionService tests:
     @Test
     void testGetOptionsByCategoryId() {
         Long categoryId = 1L;
