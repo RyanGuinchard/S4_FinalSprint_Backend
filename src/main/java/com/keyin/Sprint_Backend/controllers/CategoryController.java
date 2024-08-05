@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/games/{gameId}/categories")
+@CrossOrigin(origins = "*")
 public class CategoryController {
 
     @Autowired
