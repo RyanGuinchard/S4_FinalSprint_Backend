@@ -17,6 +17,11 @@ public class OptionService {
         return optionRepository.findByCategoryId(categoryId);
     }
 
+    public Option getOptionById(Long id) {
+        return optionRepository.findById(id).orElseThrow(()->new RuntimeException("Option not found"));
+
+    }
+
     public Option saveOption(Option option) {
         return optionRepository.save(option);
     }

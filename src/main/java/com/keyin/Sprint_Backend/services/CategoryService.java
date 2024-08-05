@@ -24,4 +24,8 @@ public class CategoryService {
     public void deleteCategory(Long id) {
         categoryRepository.deleteById(id);
     }
+
+    public Category getCategoryById(Long categoryId) {
+        return categoryRepository.findById(categoryId).orElseThrow(()->new RuntimeException("Category not found"));
+    }
 }
