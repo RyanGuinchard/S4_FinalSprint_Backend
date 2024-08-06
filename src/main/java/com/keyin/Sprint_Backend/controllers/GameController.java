@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/games")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:5173") // Ensure CORS allows frontend origin
 public class GameController {
 
     @Autowired
