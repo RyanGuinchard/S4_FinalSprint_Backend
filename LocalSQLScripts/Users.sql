@@ -5,6 +5,6 @@ CREATE TABLE users (
 );
 
 INSERT INTO users (username, password, enabled) VALUES
-('Justin', '$2b$12$rAqXA3EdZbLj5v0VExlBWe/xDdR8DpoaBzz/b6I9JgZ6k9wlWCSca', true),
-('Ryan', '$2b$12$IXv3mZ/E3kPnCV8IqgW9fehuWX5Y8u4eMJqVz2MfhlRgrXX5ZCgPy', true),
-('Chris', '$2b$12$3gMAm1bA6f4tC2JkwZy1yOjsgsS7b4hQ6J6UX7qBBzjsa5Lr5GZQG', true);
+('Justin', '$2a$10$MjobFGYDPGdQCc21MtqhEew3JOqTGB5.w4PTPWkOWDBIbp8HO3vya', true),
+('Ryan', '$2a$10$AibuVY1GXkLWG8.I2UqiTOkGxq1gEfckuR0GKHHNv7WODTHyxGOWO', true),
+('Chris', '$2a$10$gzjAHu0QUETHFUgWBtL.dOl7OwBzmwKKIuqJQrxCsb5fN4IaKpkKO', true);
